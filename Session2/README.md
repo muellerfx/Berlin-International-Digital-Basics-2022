@@ -1,3 +1,7 @@
-# BI_DigitalBasics2022 / Session 1 
+# BI_DigitalBasics2022 / Session 2
 
-This is the offical repository all lessions
+Question and Topics? 
+- Datatypes (int, char, float, string, boolean)
+- movement (int xpos, int ypos)
+- if() esle
+- for() 
