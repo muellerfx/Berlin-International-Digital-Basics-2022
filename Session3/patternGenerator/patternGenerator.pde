@@ -18,22 +18,28 @@ void setup() {
 
   cp5 = new ControlP5(this);
   cp5.addSlider("sliderValue")
-    .setPosition(50, 50)
+    .setPosition(25, 25)
     .setRange(0, 50)
     ;
 
   cp5.addSlider("stroke")
-    .setPosition(50, 75)
+    .setPosition(25, 50)
     .setRange(0, 20)
     ;
 
   cp5.addSlider("stroke1")
-    .setPosition(50, 100)
+    .setPosition(25, 75)
     .setRange(0, 20)
     ;
 }
 
 void draw() {
+  if (visible) {
+    cp5.show();
+  } else {
+    cp5.hide();
+  }
+
 
   background(0);
 
@@ -48,11 +54,6 @@ void draw() {
 
   noFill();
   stroke(255);
-
-
-
-  println(stroke);
-  println(sliderValue);
 
 
   strokeWeight(stroke);
@@ -73,8 +74,8 @@ void keyPressed() {
     saveFrame(imageCounter + ".jpg");
     imageCounter++;
   }
-
-  if (keyCode == BACKSPACE) {
+  
+  if(keyCode == BACKSPACE){
     visible = !visible;
   }
 }
