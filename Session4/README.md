@@ -1,4 +1,6 @@
-# BI_DigitalBasics2022 / Session 3
+# BI_DigitalBasics2022 / Session 4
 
 Question and Topics? 
-- WIP
+- load Images 
+- PImage 
+- display Images
